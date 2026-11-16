@@ -21,82 +21,58 @@ min-height:100vh
 .layout{display:flex;min-height:100vh}
 
 .sidebar{
-width:245px;
-background:#10294e;
-color:white;
-padding:25px 18px;
-display:flex;
-flex-direction:column;
+width:245px;background:#10294e;color:white;
+padding:25px 18px;display:flex;flex-direction:column;
 flex-shrink:0
 }
 
-.logo{
-font-size:20px;
-font-weight:800;
-line-height:1.5;
-margin-bottom:32px
-}
-
+.logo{font-size:20px;font-weight:800;line-height:1.5;margin-bottom:32px}
 .logo span{font-size:28px}
 
 .nav{
-padding:13px;
-margin-bottom:8px;
-border-radius:9px;
-font-size:13px;
-color:#dce8fa
+padding:13px;margin-bottom:8px;border-radius:9px;
+font-size:13px;color:#dce8fa
 }
-
 .nav.active{background:#ffffff20}
 
 .sidebottom{
-margin-top:auto;
-padding-top:20px;
+margin-top:auto;padding-top:20px;
 border-top:1px solid #ffffff35;
-font-size:11px;
-line-height:2;
-color:#c9d9ed
+font-size:11px;line-height:2;color:#c9d9ed
 }
 
 .main{flex:1;min-width:0}
 
 .topbar{
-height:68px;
-background:white;
-border-bottom:1px solid #e6edf6;
-display:flex;
-align-items:center;
-justify-content:space-between;
+height:68px;background:white;border-bottom:1px solid #e6edf6;
+display:flex;align-items:center;justify-content:space-between;
 padding:0 28px
 }
 
 .topbar h3{font-size:14px}
 
-.status{
-font-size:11px;
-font-weight:700;
-color:#159568
+.top-actions{display:flex;align-items:center;gap:15px}
+
+.status{font-size:11px;font-weight:700;color:#159568}
+
+.settings-btn{
+background:#1769e0;color:white;border:0;
+padding:11px 16px;border-radius:9px;
+font-size:12px;font-weight:700
 }
 
 .hero{
-margin:25px 28px;
-padding:36px;
-min-height:205px;
-border-radius:18px;
-color:white;
+margin:25px 28px;padding:36px;min-height:205px;
+border-radius:18px;color:white;
 background:
 linear-gradient(100deg,rgba(10,37,76,.96),rgba(21,100,195,.70)),
 url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1500") center/cover
 }
 
 .tag{
-display:inline-block;
-background:#ffffff25;
-padding:8px 13px;
-border-radius:20px;
-font-size:10px;
-letter-spacing:1px;
-margin-bottom:17px
+display:inline-block;background:#ffffff25;
+padding:8px 13px;border-radius:20px;
+font-size:10px;letter-spacing:1px;margin-bottom:17px
 }
 
 .hero h1{font-size:29px;margin-bottom:12px}
@@ -105,17 +81,13 @@ margin-bottom:17px
 .content{padding:0 28px}
 
 .cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:15px;
-margin-bottom:22px
+display:grid;grid-template-columns:repeat(3,1fr);
+gap:15px;margin-bottom:22px
 }
 
 .card{
-background:white;
-border:1px solid #e4ebf5;
-padding:21px;
-border-radius:14px
+background:white;border:1px solid #e4ebf5;
+padding:21px;border-radius:14px
 }
 
 .card .icon{font-size:25px;margin-bottom:12px}
@@ -123,151 +95,150 @@ border-radius:14px
 .card p{font-size:11px;color:#7b8ba2;line-height:1.7}
 
 .chat{
-background:white;
-border:1px solid #e4ebf5;
-border-radius:16px;
-overflow:hidden
+background:white;border:1px solid #e4ebf5;
+border-radius:16px;overflow:hidden
 }
 
 .chathead{
-padding:19px 21px;
-border-bottom:1px solid #e7edf6;
-display:flex;
-justify-content:space-between;
-align-items:center
+padding:19px 21px;border-bottom:1px solid #e7edf6;
+display:flex;justify-content:space-between;align-items:center
 }
 
 .chathead h3{font-size:14px}
 .chathead p{font-size:11px;color:#8493a8;margin-top:5px}
 
 .messages{
-height:390px;
-overflow-y:auto;
-padding:22px;
-background:#fbfdff
+height:390px;overflow-y:auto;padding:22px;background:#fbfdff
 }
 
 .msg{display:flex;gap:10px;margin-bottom:19px}
 .msg.user{justify-content:flex-end}
 
 .avatar{
-width:35px;
-height:35px;
-flex-shrink:0;
-border-radius:11px;
-background:#e9f0ff;
-display:grid;
-place-items:center
+width:35px;height:35px;flex-shrink:0;
+border-radius:11px;background:#e9f0ff;
+display:grid;place-items:center
 }
 
 .bubble{
-max-width:85%;
-padding:14px 16px;
-background:#edf4ff;
-border-radius:4px 14px 14px 14px;
-font-size:13px;
-line-height:1.8;
-white-space:pre-wrap;
+max-width:85%;padding:14px 16px;
+background:#edf4ff;border-radius:4px 14px 14px 14px;
+font-size:13px;line-height:1.8;white-space:pre-wrap;
 overflow-wrap:anywhere
 }
 
 .user .bubble{
-background:#1769e0;
-color:white;
+background:#1769e0;color:white;
 border-radius:14px 4px 14px 14px
 }
 
-.bubble.error{
-background:#fff0f0;
-color:#b42318
+.bubble.error{background:#fff0f0;color:#b42318}
+
+.controls{padding:20px;border-top:1px solid #e7edf6}
+
+.quick{
+display:flex;gap:8px;flex-wrap:wrap;margin-bottom:17px
 }
 
-.controls{
-padding:20px;
-border-top:1px solid #e7edf6
+.quick button{
+background:white;border:1px solid #dce5f0;
+color:#315783;border-radius:20px;
+padding:9px 13px;font-size:11px;cursor:pointer
 }
 
-.settings{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px
-}
-
-label{
-display:block;
-font-size:10px;
-font-weight:800;
-margin-bottom:9px
-}
+.inputrow{display:flex;gap:10px}
 
 input,select{
-width:100%;
-height:45px;
-padding:0 13px;
-border:1px solid #dce5f0;
-border-radius:9px;
-background:white;
-font-size:12px;
-outline:none;
-color:#173052
+width:100%;height:45px;padding:0 13px;
+border:1px solid #dce5f0;border-radius:9px;
+background:white;font-size:12px;outline:none;color:#173052
 }
 
 input:focus,select:focus{border-color:#1769e0}
 
-.quick{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-margin:17px 0
-}
-
-.quick button{
-background:white;
-border:1px solid #dce5f0;
-color:#315783;
-border-radius:20px;
-padding:9px 13px;
-font-size:11px;
-cursor:pointer
-}
-
-.inputrow{display:flex;gap:10px}
 .inputrow input{flex:1;min-width:0}
 
 button{cursor:pointer}
 
 .send{
-border:0;
-background:#1769e0;
-color:white;
-border-radius:9px;
-padding:0 23px;
-font-weight:700
+border:0;background:#1769e0;color:white;
+border-radius:9px;padding:0 23px;font-weight:700
 }
 
 .send:disabled{opacity:.5;cursor:not-allowed}
 
 .newchat{
-background:#ffffff17;
-border:1px solid #ffffff40;
-color:white;
-padding:12px;
-border-radius:9px;
-margin-bottom:23px
+background:#ffffff17;border:1px solid #ffffff40;
+color:white;padding:12px;border-radius:9px;margin-bottom:23px
 }
 
 .hint{
-margin-top:11px;
-font-size:10px;
-color:#7d8fa7;
-line-height:1.7
+margin-top:11px;font-size:10px;
+color:#7d8fa7;line-height:1.7
 }
 
-.footer{
-text-align:center;
-padding:21px;
-color:#8595aa;
-font-size:10px
+.footer{text-align:center;padding:21px;color:#8595aa;font-size:10px}
+
+/* SETTINGS MODAL */
+
+.modal{
+position:fixed;inset:0;background:#071a35a8;
+display:none;align-items:center;justify-content:center;
+padding:16px;z-index:1000
+}
+
+.modal.show{display:flex}
+
+.settings-panel{
+background:white;width:100%;max-width:480px;
+border-radius:17px;padding:25px;
+box-shadow:0 20px 70px #0003;
+max-height:90vh;overflow-y:auto
+}
+
+.settings-header{
+display:flex;justify-content:space-between;
+align-items:center;margin-bottom:24px
+}
+
+.settings-header h2{font-size:19px}
+.settings-header p{font-size:11px;color:#8493a8;margin-top:6px}
+
+.close-btn{
+width:35px;height:35px;border:0;
+background:#edf2f8;border-radius:9px;font-size:19px
+}
+
+.setting-group{margin-bottom:21px}
+
+.setting-group label{
+display:block;font-size:11px;
+font-weight:800;margin-bottom:9px
+}
+
+.setting-group input,.setting-group select{height:47px}
+
+.setting-description{
+font-size:10px;color:#8291a5;
+line-height:1.7;margin-top:8px
+}
+
+.save-btn{
+width:100%;height:46px;border:0;
+background:#1769e0;color:white;
+border-radius:9px;font-weight:700
+}
+
+.cancel-btn{
+width:100%;height:42px;border:1px solid #dce5f0;
+background:white;color:#315783;
+border-radius:9px;margin-top:10px
+}
+
+.security-note{
+background:#eff6ff;padding:12px;
+border-radius:9px;font-size:10px;
+line-height:1.7;color:#315783;margin-bottom:19px
 }
 
 @media(max-width:850px){
@@ -277,11 +248,17 @@ font-size:10px
 .content{padding:0 13px}
 .topbar{padding:0 14px}
 .cards{grid-template-columns:1fr}
-.settings{grid-template-columns:1fr}
 .messages{height:350px}
 .controls{padding:14px}
 .inputrow{gap:7px}
 .send{padding:0 15px}
+.settings-panel{padding:20px}
+}
+
+@media(max-width:420px){
+.topbar h3{font-size:12px}
+.settings-btn{padding:10px;font-size:11px}
+.status{font-size:9px}
 }
 </style>
 </head>
@@ -318,7 +295,14 @@ Powered by Groq AI
 
 <header class="topbar">
 <h3>🏥 Medical AI Dashboard</h3>
+
+<div class="top-actions">
 <span class="status" id="status">● READY</span>
+
+<button class="settings-btn" onclick="openSettings()">
+⚙️ Settings
+</button>
+</div>
 </header>
 
 <section class="hero">
@@ -386,30 +370,6 @@ How can I help you today?</div>
 
 <div class="controls">
 
-<div class="settings">
-
-<div>
-<label>🔑 GROQ API KEY</label>
-<input id="apiKey" type="password"
-placeholder="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"
-autocomplete="off">
-</div>
-
-<div>
-<label>🤖 SELECT AI MODEL</label>
-<select id="model">
-<option value="openai/gpt-oss-20b">
-GPT Model - GPT OSS 20B
-</option>
-
-<option value="llama-3.3-70b-versatile">
-Llama Model - Llama 3.3 70B
-</option>
-</select>
-</div>
-
-</div>
-
 <div class="quick">
 
 <button onclick="quickAsk('How can I maintain good hygiene?')">
@@ -444,8 +404,7 @@ Send ➤
 </div>
 
 <p class="hint">
-🔒 Your API key is used directly by this browser to contact Groq.
-It is not saved by this application. Never share your key.
+🔒 Configure your API Key and AI Model in Settings.
 Avoid entering private medical details.
 </p>
 
@@ -462,12 +421,88 @@ Educational use only. Not a substitute for professional medical advice.
 </main>
 </div>
 
+
+<!-- SETTINGS WINDOW -->
+
+<div class="modal" id="settingsModal" onclick="outsideClose(event)">
+
+<div class="settings-panel">
+
+<div class="settings-header">
+<div>
+<h2>⚙️ AI Settings</h2>
+<p>Configure your SmartSchool Medical AI</p>
+</div>
+
+<button class="close-btn" onclick="closeSettings()">×</button>
+</div>
+
+<div class="security-note">
+🔒 Your API Key is kept only in this browser session.
+It is not stored in Local Storage or sent to this website's server.
+</div>
+
+<div class="setting-group">
+
+<label>🔑 GROQ API KEY</label>
+
+<input id="apiKey"
+type="password"
+placeholder="Enter your Groq API Key"
+autocomplete="off">
+
+<p class="setting-description">
+Enter your own Groq API Key. Never share your API Key with anyone.
+</p>
+
+</div>
+
+<div class="setting-group">
+
+<label>🤖 SELECT AI MODEL</label>
+
+<select id="model">
+
+<option value="openai/gpt-oss-20b">
+GPT Model - GPT OSS 20B
+</option>
+
+<option value="llama-3.3-70b-versatile">
+Llama Model - Llama 3.3 70B
+</option>
+
+</select>
+
+<p class="setting-description">
+Choose the AI model you want to use for conversations.
+Model availability depends on your Groq account.
+</p>
+
+</div>
+
+<button class="save-btn" onclick="saveSettings()">
+Save Settings ✓
+</button>
+
+<button class="cancel-btn" onclick="closeSettings()">
+Cancel
+</button>
+
+</div>
+</div>
+
+
 <script>
 
 const $ = id => document.getElementById(id);
 
 let history = [];
 let busy = false;
+
+let apiKey = "";
+let selectedModel = "openai/gpt-oss-20b";
+
+let settingsConfigured = false;
 
 const SYSTEM_PROMPT = `
 You are SmartSchool Medical AI, an educational health assistant.
@@ -490,25 +525,81 @@ from a trusted adult and medical services.
 10. You are not a substitute for professional medical care.
 `;
 
+function openSettings(){
+
+ $("apiKey").value = apiKey;
+ $("model").value = selectedModel;
+
+ $("settingsModal").classList.add("show");
+
+}
+
+function closeSettings(){
+
+ $("settingsModal").classList.remove("show");
+
+}
+
+function outsideClose(event){
+
+ if(event.target === $("settingsModal")){
+  closeSettings();
+ }
+
+}
+
+function saveSettings(){
+
+ const newKey = $("apiKey").value.trim();
+ const newModel = $("model").value;
+
+ if(!newKey){
+  alert("Please enter your Groq API Key.");
+  $("apiKey").focus();
+  return;
+ }
+
+ if(!newKey.startsWith("gsk_")){
+  alert("Please check your Groq API Key format.");
+  return;
+ }
+
+ apiKey = newKey;
+ selectedModel = newModel;
+ settingsConfigured = true;
+
+ closeSettings();
+
+ $("status").textContent = "● SETTINGS SAVED";
+
+ alert("AI Settings saved successfully!");
+
+}
+
 function addMessage(text,user=false,error=false){
 
  const row=document.createElement("div");
+
  row.className="msg"+(user?" user":"");
 
  const avatar=document.createElement("div");
+
  avatar.className="avatar";
  avatar.textContent=user?"👤":"🤖";
 
  const bubble=document.createElement("div");
+
  bubble.className="bubble"+(error?" error":"");
  bubble.textContent=text;
 
  row.append(avatar,bubble);
 
  $("messages").appendChild(row);
+
  $("messages").scrollTop=$("messages").scrollHeight;
 
  return bubble;
+
 }
 
 function newChat(){
@@ -524,6 +615,9 @@ function newChat(){
  "Ask me about general health, hygiene and prevention.\n\n"+
  "नमस्ते! अपना सवाल पूछिए।"
  );
+
+ $("status").textContent="● READY";
+
 }
 
 async function sendMessage(){
@@ -531,15 +625,17 @@ async function sendMessage(){
  if(busy)return;
 
  const question=$("question").value.trim();
- const key=$("apiKey").value.trim();
- const model=$("model").value;
 
  if(!question)return;
 
- if(!key){
-  alert("Please enter your Groq API Key.");
-  $("apiKey").focus();
+ if(!settingsConfigured || !apiKey){
+
+  alert("Please configure your Groq API Key in Settings.");
+
+  openSettings();
+
   return;
+
  }
 
  addMessage(question,true);
@@ -557,6 +653,7 @@ async function sendMessage(){
 
  $("sendBtn").disabled=true;
  $("sendBtn").textContent="Thinking...";
+
  $("status").textContent="● AI PROCESSING";
 
  const loading=addMessage("Thinking...");
@@ -572,15 +669,22 @@ async function sendMessage(){
    "https://api.groq.com/openai/v1/chat/completions",
    {
     method:"POST",
+
     headers:{
      "Content-Type":"application/json",
-     "Authorization":"Bearer "+key
+     "Authorization":"Bearer "+apiKey
     },
+
     body:JSON.stringify({
-     model:model,
+
+     model:selectedModel,
+
      messages:messages,
+
      max_completion_tokens:1200
+
     })
+
    }
   );
 
@@ -591,22 +695,27 @@ async function sendMessage(){
    let errorMessage="Groq API request failed.";
 
    if(response.status===401){
-    errorMessage="Invalid API Key. Please check your key.";
+    errorMessage="Invalid API Key. Please check your key in Settings.";
    }
+
    else if(response.status===403){
     errorMessage="Access denied. Check your model access.";
    }
+
    else if(response.status===429){
     errorMessage="Rate limit reached. Please try again later.";
    }
+
    else if(response.status===404){
-    errorMessage="Selected model is unavailable. Try another model.";
+    errorMessage="Selected model is unavailable. Try another model in Settings.";
    }
+
    else{
     errorMessage=result.error?.message||errorMessage;
    }
 
    throw new Error(errorMessage);
+
   }
 
   const reply=result.choices?.[0]?.message?.content;
@@ -625,9 +734,11 @@ async function sendMessage(){
   $("status").textContent="● AI ONLINE";
 
  }
+
  catch(error){
 
   loading.textContent="Error: "+error.message;
+
   loading.classList.add("error");
 
   history.pop();
@@ -635,15 +746,19 @@ async function sendMessage(){
   $("status").textContent="● REQUEST ERROR";
 
  }
+
  finally{
 
   busy=false;
 
   $("sendBtn").disabled=false;
+
   $("sendBtn").textContent="Send ➤";
 
   $("messages").scrollTop=$("messages").scrollHeight;
+
  }
+
 }
 
 function quickAsk(text){
@@ -653,6 +768,7 @@ function quickAsk(text){
  $("question").value=text;
 
  sendMessage();
+
 }
 
 </script>
